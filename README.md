@@ -11,6 +11,8 @@ For this analysis, I selected 4 sentence transformers designed for semantic sear
 # Metrics
 We are comparing the models based on their **accuracy** in user text's comprehension and **average time to compute** a prediction.
 
+We are also identifying the best threshold value for the OOD option (unrelated to any of the buttons). For any input where the most similar doc is below the threshold, the predicted label will be OOD.
+
 # Dataset
 Provided dataset is created at Imperial College London for the task of testing the model for user input mapping to chatbot buttons. 
 It includes a set of user inputs in response to a chatbot utterance, a list of possible 'options' (buttons), and a label, which corresponds to user's intention in their text. 
